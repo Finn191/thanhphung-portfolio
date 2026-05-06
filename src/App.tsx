@@ -4,8 +4,6 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import HonorsAwards from './components/HonorsAwards'
 import Skills from './components/Skills'
-import About from './components/About'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
