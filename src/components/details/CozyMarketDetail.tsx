@@ -81,7 +81,7 @@ export default function CozyMarketDetail({ project, onClose }: Props) {
                                 ].map((filename, i) => (
                                     <div key={filename} className="border-4 border-black shadow-[4px_4px_0px_0px_#000] overflow-hidden flex-shrink-0">
                                         <img
-                                            src={`/images/cozy-market/${filename}`}
+                                            src={`${import.meta.env.BASE_URL}images/cozy-market/${filename}`}
                                             alt={`Screenshot ${i + 1}`}
                                             className="w-[200px] h-auto object-cover block"
                                         />

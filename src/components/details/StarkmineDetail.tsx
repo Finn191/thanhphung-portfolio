@@ -70,7 +70,7 @@ export default function StarkmineDetail({ project, onClose }: Props) {
                         </div>
                         <video
                             className="w-full block"
-                            src="/images/starkmine/Starkmine_Video.mp4"
+                            src={`${import.meta.env.BASE_URL}images/starkmine/Starkmine_Video.mp4`}
                             controls
                             loop
                             playsInline

@@ -67,7 +67,7 @@ export default function SunnysideAcresDetail({ project, onClose }: Props) {
                         </div>
                         <video
                             className="w-full block"
-                            src="/images/sunnyside-acres/GamePlay.mp4"
+                            src={`${import.meta.env.BASE_URL}images/sunnyside-acres/GamePlay.mp4`}
                             controls
                             loop
                             playsInline
@@ -132,26 +132,26 @@ export default function SunnysideAcresDetail({ project, onClose }: Props) {
                     ══════════════════════════════════════════ */}
                 <div className="border-4 border-black mb-6 shadow-[6px_6px_0px_0px_#000]">
                     <div className="px-5 py-3 border-b-4 border-black bg-[#FF9B6A] flex items-center gap-3">
-<span className="text-xs font-black uppercase tracking-widest border-2 border-black bg-white px-2 py-0.5">Challenge</span>
+                        <span className="text-xs font-black uppercase tracking-widest border-2 border-black bg-white px-2 py-0.5">Challenge</span>
                         <h2 className="font-black text-lg uppercase tracking-tight">🌐 Multiplayer & Instance-Based Gameplay</h2>
-                        </div>
-                        <div className="p-5 bg-white space-y-3">
+                    </div>
+                    <div className="p-5 bg-white space-y-3">
                         <p className="font-bold text-base leading-relaxed">
-                                The game isn't fully multiplayer for all systems — it's split into two parts:
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-start gap-3 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2.5 h-2.5 bg-black"></span><span><span className="font-black">Shared area (home map):</span> multiple players appear and move together</span></li>
-                                <li className="flex items-start gap-3 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2.5 h-2.5 bg-black"></span><span><span className="font-black">Personal area (island):</span> each player has their own instance</span></li>
-                            </ul>
+                            The game isn't fully multiplayer for all systems — it's split into two parts:
+                        </p>
+                        <ul className="space-y-2">
+                            <li className="flex items-start gap-3 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2.5 h-2.5 bg-black"></span><span><span className="font-black">Shared area (home map):</span> multiple players appear and move together</span></li>
+                            <li className="flex items-start gap-3 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2.5 h-2.5 bg-black"></span><span><span className="font-black">Personal area (island):</span> each player has their own instance</span></li>
+                        </ul>
 
-                            <div className="border-4 border-black bg-[#FFD93D] p-4 shadow-[4px_4px_0px_0px_#000]">
-                                <p className="font-black text-xs uppercase tracking-widest mb-2">⚠ Problem</p>
-                                <ul className="space-y-1.5">
-                                    <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Syncing player positions with multiple players online</li>
-                                    <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Avoiding jitter or delay when updating positions</li>
-                                    <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Keeping multiplayer and personal gameplay states separate</li>
-                                </ul>
-                            </div>
+                        <div className="border-4 border-black bg-[#FFD93D] p-4 shadow-[4px_4px_0px_0px_#000]">
+                            <p className="font-black text-xs uppercase tracking-widest mb-2">⚠ Problem</p>
+                            <ul className="space-y-1.5">
+                                <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Syncing player positions with multiple players online</li>
+                                <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Avoiding jitter or delay when updating positions</li>
+                                <li className="flex items-start gap-2 font-bold text-base"><span className="mt-2 flex-shrink-0 w-2 h-2 bg-black/40"></span>Keeping multiplayer and personal gameplay states separate</li>
+                            </ul>
+                        </div>
 
                         <h4 className="font-black text-base uppercase tracking-tight pt-3 pl-3 border-l-4 border-black">Solution</h4>
                         <ul className="space-y-2">
