@@ -59,6 +59,20 @@ export default function Header() {
                         {copied ? '✓ Copied' : 'Copy'}
                     </button>
                 </div>
+
+                {/* Download CV */}
+                <a
+                    href={`${import.meta.env.BASE_URL}DuongThanhPhung_GameDeveloper.pdf`}
+                    download
+                    className="flex items-center gap-2 px-4 py-1.5 border-4 border-black bg-[#FF6B6B] shadow-[4px_4px_0px_0px_#000] font-black text-xs uppercase tracking-wide text-black hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_#000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all duration-100"
+                >
+                    <svg width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download CV
+                </a>
             </div>
         </header>
     )

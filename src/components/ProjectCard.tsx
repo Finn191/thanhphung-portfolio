@@ -56,7 +56,7 @@ export default function ProjectCard({ project, onOpen }: ProjectCardProps) {
                 <h3 className="font-black text-xl uppercase tracking-tight text-[#FF6B6B]">
                     {project.title}
                 </h3>
-                <span className="font-black text-black text-xl leading-none">�</span>
+                <span className="font-black text-black text-xl leading-none">→</span>
             </div>
 
             {/* Role */}
