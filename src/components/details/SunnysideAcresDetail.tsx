@@ -65,13 +65,15 @@ export default function SunnysideAcresDetail({ project, onClose }: Props) {
                         <div className="bg-black px-3 py-1.5">
                             <span className="text-white font-black text-xs uppercase tracking-widest">▶ Gameplay</span>
                         </div>
-                        <video
-                            className="w-full block"
-                            src={`${import.meta.env.BASE_URL}images/sunnyside-acres/GamePlay.mp4`}
-                            controls
-                            loop
-                            playsInline
-                        />
+                        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/yQDPGN98iPs"
+                                title="Sunnyside Acres Gameplay"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
                     </div>
                 </div>
 

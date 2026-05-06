@@ -68,13 +68,15 @@ export default function StarkmineDetail({ project, onClose }: Props) {
                         <div className="bg-black px-3 py-1.5">
                             <span className="text-white font-black text-xs uppercase tracking-widest">▶ Gameplay</span>
                         </div>
-                        <video
-                            className="w-full block"
-                            src={`${import.meta.env.BASE_URL}images/starkmine/Starkmine_Video.mp4`}
-                            controls
-                            loop
-                            playsInline
-                        />
+                        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/zWaUuntcsak"
+                                title="Starkmine Gameplay"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
                     </div>
                 </div>
 
