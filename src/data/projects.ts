@@ -62,7 +62,7 @@ export const projects: Project[] = [
         role: 'Game Developer',
         shortDescription: 'A multiplayer pixel-art game simulating the Nong Lam University campus. Students explore the campus, choose career paths, and collaborate in real-time. Currently used as the official campus introduction tool.',
         fullDescription: 'Multiplayer pixel-art simulation of Nong Lam University. Graduation thesis project.',
-        thumbnail: 'images/nlu-exploration/Logo_HCMUAF.png',
+        thumbnail: 'images/nlu-exploration/bg-logo.png',
         teamSize: 2,
         duration: '~6 months',
         tools: ['Cocos Creator', 'JavaScript'],
