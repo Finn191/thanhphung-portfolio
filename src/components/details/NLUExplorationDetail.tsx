@@ -63,6 +63,22 @@ export default function NLUExplorationDetail({ project, onClose }: Props) {
                             <p className="font-bold text-base leading-relaxed">The project is currently being used as the university's official campus introduction tool.</p>
                         </div>
                     </div>
+
+                    {/* GAMEPLAY VIDEO */}
+                    <div className="border-t-4 border-black overflow-hidden">
+                        <div className="bg-black px-3 py-1.5">
+                            <span className="text-white font-black text-xs uppercase tracking-widest">▶ Gameplay</span>
+                        </div>
+                        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                                className="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/tCFtNMJ_lEo"
+                                title="NLU Exploration Gameplay"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 {/* ══════════════════════════════════════════
